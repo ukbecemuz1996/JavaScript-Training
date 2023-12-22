@@ -47,6 +47,6 @@ const sub = (a, b) => a - b;
 //higher-order function
 const operate = specifyFirstNum(5);
 
-const result = sub(3, (a, b) => a - b);
+const result = operate(3, (a, b) => a - b);
 
 console.log(result);

@@ -7,3 +7,5 @@
 
 // Variables
 
+// This function is for adding two numbers
+
