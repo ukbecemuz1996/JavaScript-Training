@@ -7,6 +7,8 @@ let templateLiteralString = `Hello World`;
 let firstCharacter = singleQuoteString[0];
 let secondCharacter = doubleQuoteString.charAt(1);
 
+console.log(firstCharacter, secondCharacter);
+
 // immutability [غير قابل للتعديل]
 
 singleQuoteString[0] = "O";
@@ -110,6 +112,13 @@ singleQuoteString[0] = "O";
     let text3 = text1.concat(" ", text2);
     text = "Hello" + " " + "World!";
     text = "Hello".concat(" ", "World!");
+
+    const firstName = "Okba";
+    const lastName = "Cemuz";
+    const fullName = firstName + " " + lastName;
+    const fullName2 = firstName.concat(" ", lastName, " ", "JS");
+    console.log(fullName);
+    console.log(fullName2);
     // console.log(text3);
     // console.log(text);
 }
@@ -118,6 +127,7 @@ singleQuoteString[0] = "O";
 {
     let text1 = "      Hello World!      ";
     let text2 = text1.trim();
+    // console.log(text1);
     // console.log(text2);
 }
 
@@ -138,16 +148,19 @@ singleQuoteString[0] = "O";
 // split
 {
     let text = "a,b,c,d,e,f";
+    let text2 = "a|b|c|d|e|f";
     const myArray1 = text.split(",");
     const myArray2 = text.split("");
+    const tmp = text2.split("|");
     // console.log(myArray1);
+    // console.log(tmp);
     // console.log(myArray2);
 }
 
 // includes
 {
     const sentence = "The quick brown fox jumps over the lazy dog.";
-    const word = "fox";
+    const word = "tmp";
     // console.log(
     //     `The word "${word}" ${
     //         sentence.includes(word) ? "is" : "is not"
@@ -159,7 +172,7 @@ singleQuoteString[0] = "O";
     const word = "FOX";
     // console.log(
     //     `The word "${word}" ${
-    //         sentence.toLocaleLowerCase().includes(word.toLocaleLowerCase())
+    //         sentence.toUpperCase().includes(word.toUpperCase())
     //             ? "is"
     //             : "is not"
     //     } in the sentence`
@@ -170,7 +183,7 @@ singleQuoteString[0] = "O";
 {
     const str = "Brave new world";
 
-    // console.log(str.indexOf("w"));
+    // console.log(str.indexOf("x"));
     // console.log(str.indexOf("new"));
 }
 
@@ -178,14 +191,14 @@ singleQuoteString[0] = "O";
     // occurrences of a letter in a string
     const str = "To be, or not to be, that is the question.";
     let count = 0;
-    let position = str.indexOf("e");
+    let position = str.indexOf("T");
 
     while (position !== -1) {
         count++;
-        position = str.indexOf("e", position + 1);
+        position = str.indexOf("T", position + 1);
     }
 
-    console.log(count);
+    // console.log(count);
 }
 
 // lastIndexOf
