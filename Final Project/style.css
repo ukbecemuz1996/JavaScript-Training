@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#app {
+    width: 80%;
+    margin: 20px auto;
+}
+
+#list-creator {
+    margin-bottom: 20px;
+}
+
+#list-creator input,
+#list-creator button {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.todo-list {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.todo-list h2 {
+    margin-top: 0;
+}
+
+.task {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.task:last-child {
+    border-bottom: none;
+}
+
+.add-task {
+    margin-top: 10px;
+}
